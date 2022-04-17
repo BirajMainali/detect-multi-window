@@ -6,11 +6,10 @@ boardcast.onmessage = (e) => {
     if (e.data === INITIAL_BOARDCAST) {
         boardcast.postMessage(CONFIRMATION_BOARDCAST);
     }
-    if (e.data = CONFIRMATION_BOARDCAST) {
+    if (e.data === CONFIRMATION_BOARDCAST) {
         alert("Are you sure you want to open a new window?");
         imageElem.src = "https://c.tenor.com/pb06GKyRor0AAAAd/justin-timberlake-stare.gif";
         document.title = "LOL.........";
     }
 };
 boardcast.postMessage(INITIAL_BOARDCAST);
-
